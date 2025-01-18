@@ -1,0 +1,136 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'times new roman', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #f7eded;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-image: url('Logo\ Hukum\ 4.png');
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  max-height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+
+.header-text {
+  text-align: center;
+  flex: 2;
+  color: rgb(252, 1, 1);
+}
+
+.header-text h1 {
+  font-size: 27px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.header-text p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #f3e527;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #1abc9c;
+  text-transform: uppercase;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+section h1 {
+  font-size: 30px;
+  color: #0575e6;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+section p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+.layanan-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+/* Footer */
+footer {
+  background-color: #34495e;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+footer p {
+  font-weight: 400;
+}
+
+/* Media Queries */
+@media (max-width: 601px) {
+  nav ul {
+      flex-direction: column;
+      padding: 15px 0;
+  }
+
+  section {
+      padding: 60px 20px;
+  }
+
+  section h1 {
+      font-size: 28px;
+  }
+
+  section p {
+      font-size: 16px;
+  }
+}
