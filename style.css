@@ -116,21 +116,76 @@ footer p {
 }
 
 /* Media Queries */
-@media (max-width: 601px) {
-  nav ul {
-      flex-direction: column;
-      padding: 10px 0;
-  }
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
 
-  section {
-      padding: 60px 20px;
-  }
+    header h1 {
+        font-size: 1.5em; /* Make the header text smaller for mobile */
+    }
 
-  section h1 {
-      font-size: 28px;
-  }
+    nav ul {
+        text-align: center; /* Center the nav links */
+    }
 
-  section p {
-      font-size: 16px;
-  }
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.1em; /* Adjust font size for mobile links */
+    }
+
+    section h2 {
+        font-size: 1.3em; /* Adjust the font size of the section heading */
+    }
+
+    section p {
+        font-size: 0.9em; /* Adjust the font size of the paragraph */
+    }
+}
+
+/* Medium Devices (Tablets, between 601px and 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 1em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: inline-block; /* Keep the navigation items in a row */
+        margin: 0 20px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
+
+/* Large Devices (Desktops, above 1025px) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 1.1em;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        margin: 0 30px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
 }
