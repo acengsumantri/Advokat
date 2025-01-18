@@ -116,10 +116,10 @@ footer p {
 }
 
 /* Media Queries */
-@media (max-width: 601px) {
+@media (max-width: 301px) {
   nav ul {
       flex-direction: column;
-      padding: 15px 0;
+      padding: 10px 0;
   }
 
   section {
